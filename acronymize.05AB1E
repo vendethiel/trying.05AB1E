@@ -1,18 +1,18 @@
-ð¡vyDg3›iÀR2£Syg2-ý}}ðý
+ð¡vyDg3›iÀR2£SygÌý}}ðý
 
 
 
- ¡                      Split by
-ð                       Space.
-  v                 }   For each...
-   y                    Push the current element.
-    Dg3›                length > 3.
-        i          }    If so, then:
-         À              Shift on the right (first becomes last).
-          R             Reverse (so now, string is "{first}{last}{rest...}")
-           2£           Take the two first.
-             S          String->List, list of first+last.
-              yg        Push length of current element
-                2-      (minus two).
-                  ý     Join the list of first+last with the length.
-                     ðý Join the list of numeronyms with a space.
+ ¡                     Split by
+ð                      Space.
+  v                }   For each...
+   y                   Push the current element.
+    Dg3›               length > 3.
+        i         }    If so, then:
+         À             Shift on the right (first becomes last).
+          R            Reverse (so now, string is "{first}{last}{rest...}")
+           2£          Take the two first.
+             S         String->List, list of first+last.
+              yg       Push length of current element
+                Ì      (minus two).
+                  ý    Join the list of first+last with the length.
+                    ðý Join the list of numeronyms with a space.
